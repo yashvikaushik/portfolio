@@ -1,0 +1,115 @@
+:root{
+   
+    --bg:#050505;
+
+    --surface:#111111;
+
+    --surface2:#181818;
+
+    --border:#262626;
+
+    --accent: #9f811d;
+    --accent-hover: #9f811d;
+
+    --white:#F5F5F5;
+
+    --gray:#9CA3AF;
+}
+
+
+
+body{
+    background:#050505;
+}
+
+
+
+.navbar .nav-link{
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover{
+    color: var(--accent-hover) !important;
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
+.d-flex a{
+    color: white;
+    text-decoration: none;
+}
+
+.d-flex a:hover{
+    color: #9d8a4b;
+}
+.navbar{
+
+    background: rgba(17,17,17,.55);
+
+    backdrop-filter: blur(16px);
+
+    border-bottom:1px solid #222;
+      padding: 20px 0;
+}
+
+.logo{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+    
+}
+
+.logo span{
+    color: var(--white);
+}
+
+#hero{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-title{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.hero-role{
+    color: var(--accent);
+    margin-top: 15px;
+     font-size:xx-large;
+}
+
+.hero-description{
+    color: var(--gray);
+    line-height: 1.8;
+    margin: 30px 0;
+     max-width: 500px;
+}
+
+.hero-greeting{
+    font-size:x-large;
+     color: var(--accent);
+}
+
+.hero-image{
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+
+    border-radius: 24px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: auto;
+}

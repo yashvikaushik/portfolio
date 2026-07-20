@@ -106,12 +106,13 @@ body{
     height: auto;
 
     border-radius: 24px;
-
     object-fit: cover;
-
     display: block;
-
     margin: auto;
+
+    box-shadow: 0 10px 25px rgba(214,195,86,.2);
+
+    animation: float 4s ease-in-out infinite;
 }
 
 #about{
@@ -128,6 +129,22 @@ body{
     border-radius:20px;
     display:block;
     margin:auto;
+}
+
+@keyframes float {
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-12px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
 }
 
 .about-content{
@@ -192,6 +209,15 @@ body{
     transition: all 0.3s ease;
 }
 
+.about-card:hover{
+
+    border-color: var(--accent);
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(220, 217, 189, 0.2);
+}
+
 .card-content{
 
     text-align:center;
@@ -224,4 +250,81 @@ line-height:1.6;
 
     margin-top:8px;
 
+}
+
+#skills{
+    padding: 100px 0;
+}
+
+.section-tag{
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: 20px;
+}
+
+.section-description{
+    color: var(--gray);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.skill-category{
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+     margin-bottom: 25px;
+}
+
+.skill-pill{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 50px;
+
+    transition: all .3s ease;
+
+    cursor: default;
+}
+
+.skill-pill i{
+    font-size: 1.3rem;
+}
+
+.skill-pill span{
+    color: var(--white);
+    font-weight: 500;
+}
+
+.skill-pill:hover{
+    transform: scale(1.15);
+
+    border-color: var(--accent);
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(183,110,121,.2);
+}
+
+
+.skill-group{
+    margin-bottom:3px;
 }

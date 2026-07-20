@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Firebase SDKs for App and Analytics -->
+    <script defer src="/__/firebase/12.16.0/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/12.16.0/firebase-analytics-compat.js"></script>
+    <!-- Firebase Initialization -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   </head>
   <body>
    
@@ -17,7 +23,7 @@
     <nav class="navbar navbar-expand-lg ">
   <div class="container">
 
-    <a class="navbar-brand logo" href="#hero">YK<span>.</spanspan></a>
+    <a class="navbar-brand logo" href="#hero">YK<span>.</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -86,18 +92,18 @@
             </h2>
 
              <p class="hero-description">
-                        Computer Science student passionate about building scalable web applications, exploring AI, and continuously learning through real-world projects.
-              </p>
+                         Computer Science student passionate about building scalable web applications, exploring AI, and continuously learning through real-world projects.
+               </p>
 
-           <div class="hero-buttons">
+            <div class="hero-buttons">
 
-                <button type="button" class="btn btn-outline-warning">View My Work</button>
+                 <button type="button" class="btn btn-outline-warning">View My Work</button>
 
-                 <button type="button" class="btn btn-outline-warning">Contact Me</button>
+                  <button type="button" class="btn btn-outline-warning">Contact Me</button>
+
+              </div>
 
              </div>
-
-            </div>
 
             <div class="col-lg-6">
               <img src="./assets/images/profile.png" alt="Yashvi Kaushik" class="hero-image">
@@ -494,4 +500,16 @@
 
   </body>
   <script src="js/script.js"></script>
+  <!-- Initialize Firebase Analytics -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        let app = firebase.app();
+        // Initialize analytics
+        firebase.analytics();
+      } catch (e) {
+        console.error('Error loading the Firebase SDK, check the console.', e);
+      }
+    });
+  </script>
 </html>

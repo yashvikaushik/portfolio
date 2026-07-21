@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Firebase SDKs for App and Analytics -->
     <script defer src="/__/firebase/12.16.0/firebase-app-compat.js"></script>
     <script defer src="/__/firebase/12.16.0/firebase-analytics-compat.js"></script>
@@ -41,7 +41,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
 
         <li class="nav-item">
@@ -495,11 +495,575 @@
 
 </section>
 
+<!-- the projects page -->
+<section id="projects">
+    <div class="container">
+        <div class="projects-heading">
+
+            <h2>My <span>Projects</span></h2>
+
+            <div class="heading-divider">
+            <span></span>
+            </div>
+
+            <p>
+                A collection of applications, APIs and experiments
+                built while learning and exploring different technologies.
+            </p>
+
+        </div>
+
+        <!-- Featured Projects -->
+
+<div class="featured-projects">
+
+    <h3 style="font-size:x-large;">  ✦ Featured Projects</h3>
+
+    <div class="row">
+
+        <!-- OpenChat -->
+
+        <div class="featured-card">
+
+    <div class="row g-5 align-items-center">
+
+        <!-- LEFT SIDE -->
+        <div class="col-lg-6">
+
+            <!-- Carousel -->
+            <div id="openChatCarousel"
+                 class="carousel slide carousel-fade"
+                 data-bs-ride="false">
+
+                <div id="openChatCarousel" class="carousel slide carousel-fade" data-bs-ride="false"> <!-- Indicators --> <div class="carousel-indicators"> <button type="button" data-bs-target="#openChatCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button> <button type="button" data-bs-target="#openChatCarousel" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#openChatCarousel" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#openChatCarousel" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#openChatCarousel" data-bs-slide-to="4"></button> </div> <!-- Images --> <div class="carousel-inner"> <div class="carousel-item active"> <img src="./assets/images/openchat1.png" class="d-block w-100" alt="Landing Page"> </div> <div class="carousel-item"> <img src="./assets/images/openchat2.png" class="d-block w-100" alt="Login Page"> </div> <div class="carousel-item"> <img src="./assets/images/openchat3.png" class="d-block w-100" alt="Dashboard"> </div> <div class="carousel-item"> <img src="./assets/images/openchat4.png" class="d-block w-100" alt="Dashboard"> </div> <div class="carousel-item"> <img src="./assets/images/openchat5.png" class="d-block w-100" alt="Dashboard"> </div> </div> <!-- Previous --> <button class="carousel-control-prev" type="button" data-bs-target="#openChatCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button> <!-- Next --> <button class="carousel-control-next" type="button" data-bs-target="#openChatCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon"></span> </button> </div>
+            </div>
+
+            <!-- Caption -->
+            <div class="project-caption">
+
+                <h5 id="caption-title">
+                    Welcome Screen
+                </h5>
+
+                <p id="caption-description">
+                    Users can securely sign in using Google authentication.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="col-lg-6">
+
+            <div class="project-content">
+
+                <div class="project-header">
+
+                    <h3>OpenChat</h3>
+
+                    <p>Real-Time Public Chat Platform</p>
+
+                </div>
+
+                
+
+                <div class="tech-stack-section">
+
+                    <h5>Tech Stack</h5>
+
+                    <div class="tech-stack">
+
+                        <span class="tech-pill">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            Node.js
+                        </span>
+
+                        <span class="tech-pill">
+                            Express
+                        </span>
+
+                        <span class="tech-pill">
+                            Socket.IO
+                        </span>
+
+                        <span class="tech-pill">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            MongoDB
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="challenge-box">
+
+                    <h5>Biggest Challenge</h5>
+
+                    <p>
+
+                        Implementing synchronized real-time messaging across
+                        multiple chat rooms without page refreshes.
+
+                    </p>
+
+                </div>
+
+                <div class="future-box">
+
+                    <h5>Future Improvements</h5>
+
+                    <ul>
+
+                        <li>Password Protected Rooms</li>
+
+                        <li>Private Chats</li>
+
+                        <li>File Sharing</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="https://github.com/yashvikaushik/openChat"
+                       target="_blank"
+                       class="btn-github">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a href="https://learning-2aac8.web.app/"
+                       target="_blank"
+                       class="btn-demo">
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+     <!-- ================= USER MANAGEMENT ================= -->
+    <div class="project-card">
+
+        <!-- Image -->
+
+        <div class="project-image">
+
+            <img src="./assets/images/user_mgmt.png"
+                 alt="User Management System">
+
+            <span class="project-badge">
+                Full Stack
+            </span>
+
+        </div>
+
+        <!-- Content -->
+
+        <div class="project-card-content">
+
+            <h3>User Management System</h3>
+
+            <p>
+
+                A complete CRUD application with user authentication,
+                EJS templating and MySQL integration.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span><i class="devicon-nodejs-plain colored"></i>Node.js</span>
+
+                
+                         
+                        <span>  <i class="devicon-firebase-plain colored"></i>Firebase Admin SDK
+                        </span>
+
+                <span>Express</span>
+
+                <span>EJS</span>
+
+                <span><i class="devicon-mysql-plain colored"></i>MySQL</span>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="project-footer">
+
+            <a href="#"
+               target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+
+                View Repository
+
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+    
+
+<!-- ================= TODO APP ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/todo_fullstack.png" alt="Full Stack ToDo App">
+            <span class="project-badge">Full Stack</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Full Stack To-Do App</h3>
+
+            <p>
+                A complete task management application with CRUD functionality
+                and persistent database storage.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                <span>Express</span>
+                <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                <span>EJS</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= AI WEATHER BOT ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/weather_bot.png" alt="AI WhatsApp Weather Assistant">
+            <span class="project-badge">AI</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>AI WhatsApp Weather Assistant</h3>
+
+            <p>
+                AI-powered WhatsApp chatbot providing real-time weather updates
+                using Twilio APIs.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-python-plain colored"></i> Python</span>
+                <span>Twilio</span>
+                <span>API</span>
+                <span>Weather</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= BOOK RECOMENDATION SYSTEM ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <div class="project-image">
+            <img src="./assets/images/book.png" alt="Book Recommendation System">
+            <span class="project-badge">Machine Learning</span>
+        </div>
+
+        <div class="project-card-content">
+
+            <h3>Book Recommendation System</h3>
+
+            <p>
+                A content-based recommendation engine that suggests similar books
+                using cosine similarity and user rating data.
+            </p>
+
+            <div class="project-tech">
+
+                <span>
+                    <i class="devicon-python-plain colored"></i>
+                    Python
+                </span>
+
+                <span>
+                    <i class="devicon-pandas-plain colored"></i>
+                    Pandas
+                </span>
+
+                <span>
+                    <i class="devicon-scikitlearn-plain colored"></i>
+                    Scikit-learn
+                </span>
+
+                <span>
+                    Pickle
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= QUOTES KEEPER ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/quotes_keeper.png" alt="Quotes Keeper">
+            <span class="project-badge">Full Stack</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Quotes Keeper</h3>
+
+            <p>
+                Full-stack application for saving, organizing and managing
+                your favorite quotes.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                <span>Express</span>
+                <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                <span>HTML</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= AMAZON CLONE ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/amazon.png" alt="Amazon Clone">
+            <span class="project-badge">Frontend</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Amazon Clone</h3>
+
+            <p>
+                Responsive Amazon homepage clone focused on modern UI and
+                layout design.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span>Bootstrap</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= STUDENT PORTAL ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/student_portal.png" alt="Student Portal">
+            <span class="project-badge">Frontend</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Student Portal</h3>
+
+            <p>
+                Responsive dashboard interface with profile management and
+                academic sections.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ================= LIBRARY ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/library.png" alt="Library Management System">
+            <span class="project-badge">Java</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Library Management System</h3>
+
+            <p>
+                Java-based application for managing books,
+                users and issue records.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-java-plain colored"></i> Java</span>
+                <span>OOP</span>
+                <span>MySQL</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= MOVIE BOOKING ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/movie.png" alt="Movie Ticket Booking System">
+            <span class="project-badge">Java</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Movie Ticket Booking System</h3>
+
+            <p>
+                Java application supporting movie ticket booking
+                and seat management.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-java-plain colored"></i> Java</span>
+                <span>OOP</span>
+                <span>File Handling</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= BANK ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./assets/images/bank.png" alt="Bank Management System">
+            <span class="project-badge">Java</span>
+        </div>
+
+        <div class="project-card-content">
+            <h3>Bank Management System</h3>
+
+            <p>
+                Java-based banking application supporting accounts,
+                transactions and balance management.
+            </p>
+
+            <div class="project-tech">
+                <span><i class="devicon-java-plain colored"></i> Java</span>
+                <span>OOP</span>
+                <span>File Handling</span>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View Repository
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+        
+    </section>
+
 
 
 
   </body>
-  <script src="js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
   <!-- Initialize Firebase Analytics -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {

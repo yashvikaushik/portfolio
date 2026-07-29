@@ -45,17 +45,17 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         
       </ul>
      <div class="d-flex align-items-center gap-3">
 
-    <a href="#">
+    <a href="https://github.com/yashvikaushik" target="_blank">
         GitHub
     </a>
 
-    <a href="#">
+    <a href="https://www.linkedin.com/in/yashvi-kaushik/" target="_blank">
         LinkedIn
     </a>
     <a href="#">Instagram</a>
@@ -71,7 +71,7 @@
 </nav>
 
 
-<!-- the home page -->
+<!-- ================= THE HOME PAGE ================= -->
 
 <section id="hero">
     <div class="container">
@@ -112,7 +112,7 @@
     </div>
 </section>
 
-<!-- the about page -->
+<!-- ================= THE ABOUT PAGE ================= -->
 
 <section id="about">
     <div class="container">
@@ -229,7 +229,7 @@
 </section>
 
 
-<!-- the skills page -->
+<!-- ================= THE SKILLS PAGE ================= -->
  <section id="skills">
 
     <div class="container ">
@@ -495,7 +495,7 @@
 
 </section>
 
-<!-- the projects page -->
+<!-- =================  PROJECTS  PAGE  ================= -->
 <section id="projects">
     <div class="container">
         <div class="projects-heading">
@@ -963,7 +963,7 @@
    </section>
 
 
-    <!-- ================= PAGE FOR OTHER PROJECTS ================= -->
+<!-- ================= PAGE FOR OTHER PROJECTS ================= -->
 
     <section class="other-projects">
 
@@ -1006,12 +1006,210 @@
 
 </section>
 
+<!-- ================= CONTACT ME PAGE ================= -->
+ <section id="contact" class="contact-section">
+
+    <div class="container">
+
+        <!-- ================= HEADING ================= -->
+
+        <div class="contact-heading text-center">
+
+            <span class="section-tag">
+                CONTACT
+            </span>
+
+            <h2>
+                Let's Build Something Amazing Together
+            </h2>
+
+            <p>
+                Whether you're looking for an intern, discussing a new idea,
+                collaborating on a project, or simply saying hello,
+                I'd love to hear from you.
+            </p>
+
+            <div class="diamond-divider">
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="row contact-content" id="contact">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-lg-5">
+
+                <div class="contact-info">
+
+                    <h3>Get in Touch</h3>
+
+                    <p class="contact-intro">
+                        I usually reply within 24 hours.
+                        Whether it's an internship opportunity,
+                        collaboration, or simply talking tech,
+                        my inbox is always open.
+                    </p>
+
+    <div class="contact-item" id="copy-email">
+
+    <div>
+
+        <small>EMAIL</small>
+
+        <p id="email-address" >
+            yashvikaushik@gmail.com
+        </p>
+
+    </div>
+
+    <i class="fa-solid fa-arrow-right-long" ></i>
+
+</div>
+
+                    <div class="contact-item">
+
+                        <small>GITHUB</small>
+
+                        <a href="https://github.com/yashvikaushik" target="_blank">
+                            github.com/yashvikaushik
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <small>LINKEDIN</small>
+
+                        <a href="https://www.linkedin.com/in/yashvi-kaushik/" target="_blank">
+                            linkedin.com/in/yashvi-kaushik
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <small>RESUME</small>
+
+                        <a href="#">
+                            Download Resume
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="col-lg-7">
+
+    <form class="contact-form" id="contact-form">
+
+        <input
+            type="text"
+            name="from_name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email"
+            required
+        >
+
+        <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+        >
+
+        <textarea
+            rows="7"
+            name="message"
+            placeholder="Write your message here..."
+            required
+        ></textarea>
+
+        <button type="submit" id="send-btn">
+
+            Send Message
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </form>
+
+</div>
+
+        </div>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <div class="contact-footer">
+
+            <div class="diamond-divider">
+                <span></span>
+            </div>
+
+            <p>
+                Thanks for stopping by.
+            </p>
+
+            <p>
+                I hope you enjoyed exploring my work as much as I enjoyed
+                building it.
+            </p>
+
+            <h5>
+                — Yashvi Kaushik
+            </h5>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="toast">
+
+    <i
+        id="toast-icon"
+        class="fa-solid fa-diamond">
+    </i>
+
+    <div class="toast-content">
+
+        <h5 id="toast-title"></h5>
+
+        <p id="toast-message"></p>
+
+    </div>
+
+</div>
+
+
 
 
 
 
 
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="module" src="js/script.js"></script>
   <!-- Initialize Firebase Analytics -->
   <script>
